@@ -16,7 +16,8 @@ class PrettierSQLArgs {
 
     this.query = this.getInput();
     const formattedQuery = format(this.query, this.cfg).trim() + '\n';
-    this.writeOutput(this.args.output, formattedQuery);
+    const outfile = this.args.output || this.args.file;
+    this.writeOutput(outfile, formattedQuery);
   }
 
   getParser() {

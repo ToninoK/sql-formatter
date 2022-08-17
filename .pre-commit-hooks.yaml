@@ -1,0 +1,5 @@
+- id: sql_formatter
+  name: SQL formatter
+  entry: sql-formatter
+  language: node
+  types: [file, sql]
